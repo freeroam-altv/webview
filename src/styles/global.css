@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+    .field-floating {
+        @apply h-14 rounded-lg px-2.5 w-full border border-darkterium-30 appearance-none focus:outline-none focus:ring-0 focus:border-blueterium read-only:text-darkterium-50;
+    }
+    .field-floating-label {
+        @apply absolute text-sm text-darkterium-30 duration-300 transform -translate-y-4 scale-75 top-2 z-[8] origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blueterium peer-focus:dark:text-blueterium peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1;
+    }
+}
+
+body, html {
+    user-select: none;
+}
+
+img {
+    pointer-events: none;
+}
+
+:root {
+    --cl-dark: #1a1a1a;
+}
